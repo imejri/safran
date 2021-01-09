@@ -10,7 +10,8 @@ pipeline {
      
    }
   post {
-    always {
+    failure
+     {
     sh 'echo "fin du pipeline"'
     }
   }
