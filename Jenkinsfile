@@ -3,8 +3,8 @@ pipeline {
   stages {
       stage ('source') {
         steps {
-          git branch: 'test', url: 'git@diyvb:repos/gradle-greetings'
-          stash name: 'test-sources', includes: 'build.gradle,/src/test'
+          git branch: 'master', url: 'https://github.com/imejri/maven-project.git'
+     
           }
       }
      
