@@ -7,7 +7,6 @@ pipeline {
           stash name: 'test-sources', includes: 'build.gradle,/src/test'
           }
       }
-      stage('build') {
-      }
+     
    }
   }
