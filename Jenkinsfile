@@ -9,4 +9,7 @@ pipeline {
       }
      
    }
+  post {
+    echo "fin du pipeline"
+  }
   }
