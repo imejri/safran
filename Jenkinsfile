@@ -3,7 +3,7 @@ pipeline {
   stages {
       stage ('source') {
         steps {
-          git branch: 'master', url: 'https://github.com/imejri/maven-project.git'
+          git branch: 'test', url: 'https://github.com/imejri/maven-project.git'
      
           }
       }
@@ -12,7 +12,7 @@ pipeline {
   post {
     failure
      {
-    sh 'echo "fin du pipeline"'
+    sh 'echo "fin du pipeline en erreur"'
     }
   }
   }
