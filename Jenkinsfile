@@ -10,6 +10,6 @@ pipeline {
      
    }
   post {
-    echo "fin du pipeline"
+    sh echo "fin du pipeline"
   }
   }
