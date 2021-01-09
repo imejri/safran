@@ -5,7 +5,7 @@ pipeline {
           git branch: 'test', url: 'git@diyvb:repos/gradle-greetings'
           stash name: 'test-sources', includes: 'build.gradle,/src/test'
           }
-      stag('build') {
+      stage('build') {
       }
    }
   }
